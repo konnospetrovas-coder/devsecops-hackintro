@@ -10,11 +10,11 @@ TARGETS = elevate mcp
 # Default rule: builds everything in the TARGETS list
 all: $(TARGETS)
 
-# Link elevate: uses common objects + elevate.o
+# Link elevate
 elevate: $(COMMON_OBJ) elevate.o
 	$(CC) $(COMMON_OBJ) elevate.o -o elevate
 
-# Link mcp: uses common objects + mcp.o
+# Link mcp
 mcp: $(COMMON_OBJ) mcp.o
 	$(CC) $(COMMON_OBJ) mcp.o -o mcp
 
