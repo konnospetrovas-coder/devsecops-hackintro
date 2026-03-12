@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add gcc make
+RUN apk add gcc make linux-headers
 
 WORKDIR /app
 
